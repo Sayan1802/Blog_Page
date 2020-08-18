@@ -1,0 +1,111 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+.theme-color{
+    color:#ea7e6e;
+}
+
+.bgimg-blog{
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    scroll-behavior: smooth;
+    height: 60%;
+  }
+  .bgimg-blog {
+    background-image: url("Images/blogs.jpg");
+  }
+  
+  
+  .back-bg-color{
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+  }
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+  }
+  
+@keyframes reveal {
+    80%{
+        letter-spacing: 8px;
+    }
+    100% {
+        background-size: 300% 300%;
+    }
+}
+
+@keyframes glow {
+    40% {
+        text-shadow: 0 0 5px #ea7e6e;
+    }
+    
+    80% {
+        text-shadow: 0 0 10px #ea7e6e;
+    }
+    100% {
+        text-shadow: 0 0 5px #ea7e6e;
+    }
+}
+
+.blog-banner-text {
+    background-color: transparent;
+    color: #fff;
+    padding: 18px;
+    letter-spacing: 5px;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    font-size: 8vw;
+    font-family: sans-serif;
+    animation: reveal 3000ms ease-in-out forwards,
+                glow 2500ms linear infinite;
+}  
+
+.main-row{
+    margin-top: 10%;
+}
+.card{
+    cursor: pointer;
+}
+.card img{
+    transform:translateY(-50px);
+    border-radius: 15px;
+    z-index:1;
+}
+.card .card-body{
+    visibility: hidden;
+    transform: translateY(-150px);
+    height: 0px;
+}
+.card:hover .card-body{
+    visibility: visible;
+    transform: translateY(-50px);
+    transition: 0.5s;
+    height: auto;
+}
+.card h4{
+    visibility: visible;
+    text-align: center;
+    color: #e76e5c;
+}
+.card:hover h4{
+    visibility: hidden;
+}
+.card-body h5{
+    color: #e76e5c;
+}
+.card-body button{
+    color: #e76e5c;
+}
