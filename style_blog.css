@@ -7,6 +7,14 @@ body, html {
     color:#ea7e6e;
 }
 
+.navbar-nav .nav-item .nav-link {
+    color: black;
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: #ea7e6e;
+}
+
 .bgimg-blog{
     position: relative;
     background-attachment: fixed;
